@@ -1,9 +1,10 @@
-import { createSwitchNavigator, createStackNavigator, createBottomTabNavigator, TabNavigator } from 'react-navigation';
-import { SplashScreen } from '../screens';
+import { createSwitchNavigator, createStackNavigator } from 'react-navigation';
+import { CreateAccountScreen, VerifyAccountScreen } from '../screens';
 
 export default createStackNavigator(
     {
-        Splash: SplashScreen,
+        CreateAccount: CreateAccountScreen,
+        VerifyAccount: VerifyAccountScreen,
     },
     {
         headerMode: 'none'
